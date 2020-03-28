@@ -1,0 +1,17 @@
+ENTIDADES do projeto
+
+ONG
+CASO (incident)
+
+relacionamento: uma ong pode ter varios casos
+
+FUNCIONALIDADES
+
+LOGIN de ONG
+LOGOUT de ONG
+CADASTRO de ONG
+CADASTRAR novos casos
+DELETAR casos
+LISTAR casos específicos de uma ONG
+LISTAR TODOS os casos
+CONTATO com a ONG
