@@ -7,7 +7,7 @@ const app = express();
 app.use(cors())
 app.use(express.json())
 app.use(routes)
-/**
+/*
  * Métodos HTTP:
  * GET: Busca informação no backend
  * POST: Cria informação no backend
