@@ -5,10 +5,10 @@ const multer = require("multer")
 
 /*novas funcionalidades */
 const storage = multer.diskStorage({
-    destination: function(req, file, cb){
+    destination: function(request, file, cb){
         cb(null, "uploads/")
     },
-    filename: function(req, file, cb){
+    filename: function(request, file, cb){
             cb(null, file.originalname)
         }
 })
@@ -44,12 +44,12 @@ app.use(routes)
  /* daqui pra baixo adicionei novas funcionalidades */
 
 
-app.get("/", (req, res) => {
-    res.render("index")
+app.get("/", (request, response) => {
+    response.render("index")
 })
 
-app.post("/upload", upload.single("file"),(req, res) =>{
-    res.send("Arquivo recebido")
+app.post("/upload", upload.single("file"),(request, response) =>{
+    response.send("Arquivo recebido")
 })
 /*e elas terminam aqui*/
 
