@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, {useState} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import {FiArrowLeft} from 'react-icons/fi'
@@ -64,11 +63,4 @@ export default function Register(){
         </div>
 
     )
-=======
-import React from 'react'
-import './styles.css'
-
-export default function Register(){
-    return <h1>Register</h1>
->>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d
 }
