@@ -6,7 +6,11 @@
     
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     justify-content:space-between;
+=======
+    justify-content:center;
+>>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d
 }
 
 .logon-container section.form {
@@ -24,3 +28,24 @@
     margin-bottom: 32px;
 }
 
+<<<<<<< HEAD
+=======
+.logon-container section.form form a{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #41414d;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    transition: opacity 0.2s;
+}
+
+.logon-container section.form form a:hover{
+    opacity: 0.8;
+}
+
+.logon-container section.form form a svg{
+    margin-right: 8px;
+}
+>>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d

@@ -1,11 +1,31 @@
 const express = require ('express')
 const cors = require('cors')
 const routes = require ('./routes') // ./ referencia a mesma pasta do arquivo index
+const multer = require("multer")
+
+/*novas funcionalidades */
+const storage = multer.diskStorage({
+    destination: function(request, file, cb){
+        cb(null, "uploads/")
+    },
+    filename: function(request, file, cb){
+            cb(null, file.originalname)
+        }
+})
+
+const upload = multer({storage})
+/*termina aqui*/
 
 
 const app = express();
 
 
+<<<<<<< HEAD
+=======
+/*view para nova front*/
+app.set('view engine', 'ejs')
+/*termina aqui*/
+>>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d
 
 app.use(cors())
 app.use(express.json())
@@ -25,6 +45,16 @@ app.use(routes)
  * Request Body: corpo da requisição, para criar ou alterar recursos
  */
 
+ /* daqui pra baixo adicionei novas funcionalidades */
 
+
+app.get("/", (request, response) => {
+    response.render("index")
+})
+
+app.post("/upload", upload.single("file"),(request, response) =>{
+    response.send("Arquivo recebido")
+})
+/*e elas terminam aqui*/
 
 app.listen(3333)

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap">
+
+<head>
+
+
+
+<style>
+
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  font-family: "Sen", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+p {
+
+ font-family: "Sen", sans-serif;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Upload de arquivos</h1>
+<p>Selecione qualquer arquivo de seu computador<br>
+Elas irão para a pasta /uploads.</p>
+
+<form method="post" action="/upload" enctype="multipart/form-data">
+
+
+        <input type="file" name="file"><br>
+        <input type="submit" value="Carregar!">
+
+        </form>
+
+</body>
+</html>

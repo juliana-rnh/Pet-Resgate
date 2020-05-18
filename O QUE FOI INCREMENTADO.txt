@@ -1,0 +1,12 @@
+Nome: Juliana da Fonseca Rainho
+Matrícula: 2016103410
+Repositório do projeto: https://github.com/juliana-rnh/Pet-Resgate
+
+O que foi incrementado no backend:
+
+NPM INSTALL EJS --SAVE (view de páginas para o frontend básico)
+NPM INSTALL MULTER --SAVE (para fazer upload dos arquivos)
+
+Pastas
+/uploads (armazena os arquivos upados)
+/views (frontend básico do carregamento de arquivos)
