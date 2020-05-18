@@ -30,7 +30,6 @@ form input{
     padding: 0 24px;
 }
 
-<<<<<<< HEAD
 form textarea {
     width: 100%;
     min-height: 140px;
@@ -42,8 +41,6 @@ form textarea {
     resize: vertical;
  }
 
-=======
->>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d
 .button {
     width: 100%;
     height: 60px;
@@ -63,7 +60,6 @@ form textarea {
 
 .button:hover {
     filter: brightness(90%);
-<<<<<<< HEAD
 }
 
 .back-link{
@@ -83,6 +79,4 @@ form textarea {
 
 .back-link svg{
     margin-right: 8px;
-=======
->>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d
 }
