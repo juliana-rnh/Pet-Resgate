@@ -1,19 +1,19 @@
 const express = require ('express')
 const cors = require('cors')
 const routes = require ('./routes') // ./ referencia a mesma pasta do arquivo index
-const multer = require("multer")
+//const multer = require("multer")
 
 /*novas funcionalidades */
-const storage = multer.diskStorage({
-    destination: function(request, file, cb){
-        cb(null, "uploads/")
-    },
-    filename: function(request, file, cb){
-            cb(null, file.originalname)
-        }
-})
+//const storage = multer.diskStorage({
+ //   destination: function(request, file, cb){
+ //       cb(null, "uploads/")
+ //   },
+//    filename: function(request, file, cb){
+ //           cb(null, file.originalname)
+//        }
+//})
 
-const upload = multer({storage})
+//const upload = multer({storage})
 /*termina aqui*/
 
 
@@ -46,9 +46,9 @@ app.get("/", (request, response) => {
     response.render("index")
 })
 
-app.post("/upload", upload.single("file"),(request, response) =>{
-    response.send("Arquivo recebido")
-})
+//app.post("/upload", upload.single("file"),(request, response) =>{
+//    response.send("Arquivo recebido")
+//})
 /*e elas terminam aqui*/
 
 app.listen(3333)
