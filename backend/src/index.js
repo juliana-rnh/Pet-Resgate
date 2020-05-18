@@ -20,12 +20,6 @@ const upload = multer({storage})
 const app = express();
 
 
-<<<<<<< HEAD
-=======
-/*view para nova front*/
-app.set('view engine', 'ejs')
-/*termina aqui*/
->>>>>>> 2a0f446ee0edf7e1b521d07aab326212e438f29d
 
 app.use(cors())
 app.use(express.json())
